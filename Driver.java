@@ -23,9 +23,9 @@ public class Driver {
             else
                 System.out.println("1 is not a root of s");
 
-            Polynomial m = p2.multiply(p1);
-            System.out.println(m.evaluate(2));
-            m.saveToFile("poly_test.txt");
+            Polynomial mult_poly = p2.multiply(p1);
+            System.out.println(mult_poly.evaluate(2));
+            mult_poly.saveToFile("poly_test.txt");
             Polynomial fromFile = new Polynomial(new File("poly_test.txt"));
             System.out.println(fromFile.evaluate(2));
             
